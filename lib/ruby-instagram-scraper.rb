@@ -5,8 +5,6 @@ module RubyInstagramScraper
 
   BASE_URL = "https://www.instagram.com"
 
-    BASE_URL = "https://www.instagram.com"
-
   def self.search ( query )
     # return false unless query
     url = "#{BASE_URL}/web/search/topsearch/"
