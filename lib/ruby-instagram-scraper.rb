@@ -39,7 +39,7 @@ module RubyInstagramScraper
     JSON.parse(open(url).read)['graphql']['shortcode_media']
   end
 
-  def get_user_info ( username, max_id = nil )
+  def self.get_user_info ( username, max_id = nil )
     url = "#{BASE_URL}/#{ username }/?__a=1"
     params = ""
     params = "&max_id=#{ max_id }" if max_id
